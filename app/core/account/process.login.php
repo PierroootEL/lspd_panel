@@ -32,7 +32,7 @@
                     $s = new \LSPD\App\Core\Account\Session\SessionManager();
                     $s->sessionStart($this->getUserInfos($this->_username));
                 }else{
-                    header('Location: /login.php?e=2');
+                    header('Location: /login.php?e=1');
                 }
             }else{
                 header('Location: /login.php?e=1');

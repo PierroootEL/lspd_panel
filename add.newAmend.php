@@ -8,7 +8,7 @@
 
     if (isset($_POST['valid_add'])){
         require_once '/var/www/pierre/lspd/app/core/add/citizenAmend.php';
-        $amend->newAmend($_POST['citizenID'], $_POST['reason']);
+        $amend->newAmend($_POST['citizenID'], $_POST['reason'], $_POST['price']);
     }
 
 ?>
@@ -32,7 +32,8 @@
             <select name="citizenID">
                 <?php $amend->addAmendSelectMenu(); ?>
             </select>
-            <input type="text" name="reason" placeholder="Raison de l'amende">
+            <input type="text" name="reason" placeholder="Raison de l'amende" required>
+            <input type="number" name="price" placeholder="Prix de l'amende" required>
             <button type="submit" name="valid_add">Ajouter</button>
         </form>
     </div>

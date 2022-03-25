@@ -56,7 +56,7 @@
                     </tbody>
                 </table>
                 <div class="box--footer">
-                    <button onclick="location.href='add.cityEntries.php'">Ajouter un rescencement</button>
+                    <button onclick="location.href='add.cityEntries.php'">Ajouter un civil</button>
                 </div>
             </div>
             <div class="box">
@@ -91,7 +91,7 @@
                     </tbody>
                 </table>
                 <div class="box--footer">
-                    <button onclick="location.href='add.newAmend.php'">Ajouter un rescencement</button>
+                    <button onclick="location.href='add.newAmend.php'">Ajouter une amende</button>
                 </div>
             </div>
             <div class="box">

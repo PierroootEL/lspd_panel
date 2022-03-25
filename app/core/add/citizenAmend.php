@@ -17,13 +17,19 @@
          */
         private $_reason;
 
-        public function newAmend(int $citizenID, string $reason)
+        /**
+         * @var int Price of the current amend
+         */
+        private $_price;
+
+        public function newAmend(int $citizenID, string $reason, int $price)
         {
 
             $this->_citizenID = $citizenID;
             $this->_reason = $reason;
+            $this->_price = $price;
 
-            $this->addNewAmend($this->_citizenID, $this->_reason);
+            $this->addNewAmend($this->_citizenID, $this->_reason, $this->_price);
 
         }
 

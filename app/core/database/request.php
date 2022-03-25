@@ -62,14 +62,15 @@
             );
         }
 
-        public function addNewAmend(int $citizenID, string $reason)
+        public function addNewAmend(int $citizenID, string $reason, int $price)
         {
 
             return $this->Request(
-                'INSERT INTO cityAmend (entryID, reason) VALUES (:entryID, :reason)',
+                'INSERT INTO cityAmend (entryID, reason, price) VALUES (:entryID, :reason, :price)',
                 array(
                     ':entryID' => $citizenID,
-                    ':reason' => $reason
+                    ':reason' => $reason,
+                    ':price' => $price
                 )
             );
 
